@@ -1,12 +1,14 @@
 package by.ilyushenko.demo.university.service;
 
 import by.ilyushenko.demo.university.model.*;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+@Service
 public class UniversityTasksServiceImpl implements UniversityTasksService {
 
     private static <T> Predicate<T> distinctByKey(Function<? super T, ?> keyExtractor) {
